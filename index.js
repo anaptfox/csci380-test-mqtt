@@ -32,7 +32,7 @@ client.on('connect', function () {
 
 client.on('message', function (topic, message) {
   if (topic === 'device') {
-    console.log("I have a message: " + message.toString())
+    console.log("I have  a message: " + message.toString())
 
     client.publish('web', 'I heard you.')
     // save message DB
